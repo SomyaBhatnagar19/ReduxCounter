@@ -23,9 +23,9 @@ const Counter = () => {
       <div className={classes.value}>{counter}</div>
       <hr className={classes.hrLine}></hr>
       <div className={classes.buttons}>
-  <button onClick={incrementHandler}>Increment</button>
+  <button onClick={incrementHandler}>Increment By 5</button>
   <button onClick={toggleCounterHandler}>Toggle Counter</button>
-  <button onClick={decrementHandler}>Decrement</button>
+  <button onClick={decrementHandler}>Decrement By 5</button>
 </div>
       
     </main>
