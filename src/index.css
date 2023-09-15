@@ -6,21 +6,21 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: #252525;
-  background-color: #252525;
+  background-color: #263849;
 }
 
 button {
   font: inherit;
   cursor: pointer;
-  background-color: #3c0080;
-  border: 1px solid #3c0080;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 6px;
+  background-color: #0f81c7;
+  border: 1px solid #0f81c7;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 3px;
 }
 
 button:hover,
 button:active {
-  background-color: #5b14ac;
-  border-color: #5b14ac;
+  background-color: blue;
+  border-color: blue;
 }
