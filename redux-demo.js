@@ -1,18 +1,20 @@
-const redux = require('redux');//importing the redux library
+//  Redux code by increment and decrement by 2
+
+const redux = require('redux'); //importing the redux library
 
 //defining the reducer function
 /*This function takes the current state and the action. It returns the new state in form of object.*/ 
 const reducer = (state = {counter:0}, action) => {
   switch (action.type) {
-    case 'increment':
+    case 'incrementBy2':
       return {
-        ...state,
-        counter: state.counter + 1,
+        
+        counter: state.counter + 2,
       };
-    case 'decrement':
+    case 'decrementBy2':
       return {
-        ...state,
-        counter: state.counter - 1,
+     
+        counter: state.counter - 2,
       };
     default:
       return state;
@@ -28,10 +30,9 @@ const subscriber = () => {
 
 store.subscribe(subscriber);
 
-// Increase the counter by 5 by dispatching "increment" action 5 times
-for (let i = 0; i < 5; i++) {
-  store.dispatch({ type: 'increment' });
-}
+// Increase the counter by 2 by dispatching "increment" action 
+  store.dispatch({ type: 'incrementBy2' });
 
-// Decrease the counter by dispatching "decrement" action
-store.dispatch({ type: 'decrement' });
+
+// Decrease the counter by 2 dispatching "decrement" action
+store.dispatch({ type: 'decrementBy2' });
